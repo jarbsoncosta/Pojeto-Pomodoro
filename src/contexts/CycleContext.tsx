@@ -42,14 +42,14 @@ export function CycleContextProvider({ children }: CycleContextProviderProps) {
       cycles: [],
       activeCycleId: null,
     },
-    () => {
+    /* () => {
       const storedStateAsJson = localStorage.getItem(
         '@ignite-timer:cycle-state-1.0.0',
       )
       if (storedStateAsJson) {
         return JSON.parse(storedStateAsJson)
       }
-    },
+    }, */
   )
 
   const [amountSecondPassed, setAmountSecondPassed] = useState(0)
